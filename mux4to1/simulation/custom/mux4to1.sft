@@ -1,0 +1,4 @@
+set tool_name "Custom Verilog HDL"
+set corner_file_list {
+	{{"Slow Model"} {mux4to1.vo mux4to1_v.sdo}}
+}

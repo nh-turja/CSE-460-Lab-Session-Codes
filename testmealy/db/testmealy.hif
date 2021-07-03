@@ -1,0 +1,71 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+21
+2996
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+testmealy
+# storage
+db|testmealy.(0).cnf
+db|testmealy.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+testmealy.v
+1db82bb85f146afdf0708a781f1d65b8
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+A
+0
+PARAMETER_SIGNED_DEC
+DEF
+B
+1
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

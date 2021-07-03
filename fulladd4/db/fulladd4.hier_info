@@ -1,0 +1,61 @@
+|fulladd4
+S0 <= fulladd:stage0.port0
+S1 <= fulladd:stage1.port0
+S2 <= fulladd:stage2.port0
+S3 <= fulladd:stage3.port0
+Cout <= fulladd:stage3.port1
+A0 => A0~0.IN1
+A1 => A1~0.IN1
+A2 => A2~0.IN1
+A3 => A3~0.IN1
+B0 => B0~0.IN1
+B1 => B1~0.IN1
+B2 => B2~0.IN1
+B3 => B3~0.IN1
+Cin => Cin~0.IN1
+
+
+|fulladd4|fulladd:stage0
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+A => Cout~0.IN0
+A => S~0.IN0
+B => Cout~0.IN1
+B => S~0.IN1
+Cin => Cout~1.IN1
+Cin => S~1.IN1
+
+
+|fulladd4|fulladd:stage1
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+A => Cout~0.IN0
+A => S~0.IN0
+B => Cout~0.IN1
+B => S~0.IN1
+Cin => Cout~1.IN1
+Cin => S~1.IN1
+
+
+|fulladd4|fulladd:stage2
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+A => Cout~0.IN0
+A => S~0.IN0
+B => Cout~0.IN1
+B => S~0.IN1
+Cin => Cout~1.IN1
+Cin => S~1.IN1
+
+
+|fulladd4|fulladd:stage3
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+A => Cout~0.IN0
+A => S~0.IN0
+B => Cout~0.IN1
+B => S~0.IN1
+Cin => Cout~1.IN1
+Cin => S~1.IN1
+
+
