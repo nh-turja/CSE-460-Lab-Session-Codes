@@ -1,0 +1,32 @@
+|Vending_Machine
+clock => present_state[1]~reg0.CLK
+clock => present_state[0]~reg0.CLK
+clock => next_state[1]~reg0.CLK
+clock => next_state[0]~reg0.CLK
+clock => purchase~reg0.CLK
+clock => cash_return[1]~reg0.CLK
+clock => cash_return[0]~reg0.CLK
+reset => next_state~16.OUTPUTSELECT
+reset => next_state~15.OUTPUTSELECT
+reset => present_state~1.OUTPUTSELECT
+reset => present_state~0.OUTPUTSELECT
+reset => cash_return[0]~reg0.ENA
+reset => cash_return[1]~reg0.ENA
+reset => purchase~reg0.ENA
+cash_in[0] => Equal0.IN0
+cash_in[0] => Equal1.IN0
+cash_in[0] => Equal2.IN1
+cash_in[0] => Equal3.IN0
+cash_in[1] => Equal0.IN1
+cash_in[1] => Equal1.IN1
+cash_in[1] => Equal2.IN0
+cash_in[1] => Equal3.IN1
+purchase <= purchase~reg0.DB_MAX_OUTPUT_PORT_TYPE
+present_state[0] <= present_state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+present_state[1] <= present_state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+next_state[0] <= next_state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+next_state[1] <= next_state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cash_return[0] <= cash_return[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cash_return[1] <= cash_return[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
